@@ -42,15 +42,10 @@
   - `Poppins-Medium.ttf`
   - `Poppins-Regular.ttf`
 
-## 📸 Screenshots
-
-![Project Preview](./images/screenshot1.png)  
-![User Profile Section](./images/screenshot2.png)
-
 ## 🚀 Deployment
 
 The project is hosted on **GitHub Pages**. You can view it here:  
-🔗 **[Live Project]()**
+🔗 **[Live Project](https://adhi654.github.io/se_project_spots/)**
 
 ## 🎯 Future Enhancements
 
