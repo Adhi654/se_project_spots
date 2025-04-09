@@ -47,6 +47,10 @@
 The project is hosted on **GitHub Pages**. You can view it here:  
 🔗 **[Live Project](https://adhi654.github.io/se_project_spots/)**
 
+## Video Demonstration
+
+[Click here to watch the demo video](https://drive.google.com/file/d/1Kz7DXgo7S-Tb6d5pC6ZOJaIQmTBzGs-8/view?usp=sharing)
+
 ## 🎯 Future Enhancements
 
 - add a upload section .
