@@ -75,31 +75,21 @@
   background-color: #212121;
   cursor: pointer;
   display: flex;
+  justify-content: center;
+  padding: 18px;
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
   border: 0;
+  gap: 8px;
 }
 .profile__add-btn:hover {
   opacity: 80%;
   cursor: pointer;
 }
-.profile__add-text {
-  height: 16px;
-  width: 76px;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 100%;
-  color: rgba(252, 245, 229, 1);
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-  flex-grow: 1;
-}
+
 .profile__icon {
   width: 12px;
   border: 2px;
-  left: 20px;
-  position: relative;
-  bottom: 1.5px;
 }
 @media screen and (max-width: 627px) {
   .profile {
@@ -135,16 +125,5 @@
   .profile__edit-btn {
     margin: auto;
     width: 120px;
-  }
-  .profile__add-text {
-    position: relative;
-    bottom: 15px;
-  }
-  .profile__icon {
-    width: 12px;
-    border: 2px;
-    left: 60px;
-    position: relative;
-    bottom: 0.7px;
   }
 }
