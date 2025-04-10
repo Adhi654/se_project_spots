@@ -6,37 +6,43 @@
   width: 413px;
   object-fit: cover;
   display: block;
+  border-radius: 8px;
 }
 .card__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 10px;
 }
 .card__like-button {
-  background-image: url(../images/Like\ Icon.svg);
+  background-image: url(../images/Union.svg);
   width: 23px;
   height: 20px;
   background-color: transparent;
   border: none;
   opacity: 0.4;
-  color: gray;
   transition: opacity 0.3s ease-in-out;
 }
 .card__like-button:hover {
   cursor: pointer;
-  color: black;
   opacity: 1;
 }
 .card__title {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
+  margin: 0;
   font-weight: 500;
   font-size: 20px;
   line-height: 120%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  color: #212121;
+  max-width: fit-content;
 }
 @media screen and (max-width: 627px) {
+  .card {
+    min-width: 288px;
+  }
   .card__image {
     height: 288px;
     width: 288px;
@@ -44,6 +50,10 @@
   .card__content {
     width: 288px;
     height: 18px;
-    margin-top: 10px;
+  }
+  .card__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
   }
 }
