@@ -76,7 +76,7 @@
   cursor: pointer;
   display: flex;
   justify-content: center;
-  padding: 18px;
+  padding: 18px 0;
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
   border: 0;

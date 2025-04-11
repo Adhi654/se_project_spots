@@ -1,10 +1,13 @@
 .footer {
-  text-align: center;
   padding: 60px 0;
+  margin: 0;
+}
+.footer__text {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 100%;
   color: #212121b2;
+  text-align: center;
   margin: 0;
 }

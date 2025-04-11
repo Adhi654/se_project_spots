@@ -47,11 +47,9 @@
     height: 288px;
     width: 288px;
   }
-  .card__content {
-    width: 288px;
-  }
   .card__title {
     font-size: 16px;
     line-height: 100%;
+    max-width: 288px;
   }
 }
