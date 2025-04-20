@@ -1,0 +1,116 @@
+.modal {
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal_is-opened {
+  visibility: visible;
+}
+
+.modal__container {
+  max-width: 630px;
+  width: 90%;
+  border-radius: 8px;
+  background-color: #ffff;
+  padding: 32px 50px;
+  position: relative;
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 32px;
+  right: 50px;
+  opacity: 40%;
+  border: 2px;
+  background-color: #ffff;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+  color: rgba(33, 33, 33, 1);
+}
+
+.modal__close-btn:hover {
+  opacity: 100%;
+}
+
+.modal__title {
+  margin: 0 0 32px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  max-width: 630px;
+}
+
+.modal__label {
+  margin: 0 0 32px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(33, 33, 33, 0.7);
+}
+
+.modal__input {
+  display: block;
+  max-width: 602px;
+  margin: 8px 0 0;
+  width: 100%;
+  padding: 16px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+.model__input::placeholder {
+  color: rgba(33, 33, 33, 0.3);
+}
+
+.modal__submit-btn {
+  max-width: 156px;
+  border-radius: 8px;
+  padding: 18px 32px;
+  background-color: rgba(33, 33, 33, 1);
+  color: rgba(252, 245, 229, 1);
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+}
+@media screen and (max-width: 627px) {
+  .modal__container {
+    max-width: 276px;
+    padding: 12px;
+  }
+
+  .modal__form {
+    max-width: 276px;
+  }
+
+  .modal__title {
+    font-size: 20px;
+  }
+  .modal__label {
+    max-width: 276px;
+  }
+
+  .modal__close-btn {
+    top: 1px;
+    right: 1px;
+  }
+  .modal__submit-btn {
+    max-width: 276px;
+  }
+  .modal__input {
+    max-width: 248px;
+  }
+}
