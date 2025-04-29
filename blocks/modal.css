@@ -1,5 +1,7 @@
 .modal {
   visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
@@ -9,10 +11,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
 .modal_is-opened {
   visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .modal__container {
@@ -22,6 +27,11 @@
   background-color: #ffff;
   padding: 32px 50px;
   position: relative;
+  transform: scale(0.95);
+  transition: transform 0.3s ease-in-out;
+}
+.modal_is-opened .modal__container {
+  transform: scale(1);
 }
 
 .modal__close-btn {
