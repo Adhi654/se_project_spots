@@ -14,6 +14,10 @@
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
+.modal_type_preview {
+  padding: 0 16px;
+}
+
 .modal_is-opened {
   visibility: visible;
   opacity: 1;
@@ -45,9 +49,18 @@
   transition: opacity 0.3s ease-in-out;
   color: rgba(33, 33, 33, 1);
 }
-
+.modal__close_type_preview {
+  top: 0;
+  right: -52.5px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 1);
+  opacity: 100%;
+}
 .modal__close-btn:hover {
   opacity: 100%;
+}
+.modal__close_type_preview:hover {
+  opacity: 40%;
 }
 
 .modal__title {
@@ -99,6 +112,28 @@
   cursor: pointer;
   border: none;
 }
+.modal__image-container {
+  position: relative;
+}
+.modal__image {
+  max-width: 80vw;
+  max-height: 80vh;
+  width: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 8px;
+}
+.modal__caption {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(33, 33, 33, 1);
+  max-width: fit-content;
+  border-radius: 8px;
+  padding: 4px 8px;
+}
+
 @media screen and (max-width: 627px) {
   .modal__container {
     max-width: 276px;
@@ -120,6 +155,13 @@
   .modal__close-btn {
     top: 22px;
     right: 12px;
+  }
+  .modal__close_type_preview {
+    top: -48px;
+    right: 0;
+  }
+  .modal__image {
+    max-width: unset;
   }
   .modal__submit-btn {
     max-width: 276px;
