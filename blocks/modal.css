@@ -49,7 +49,7 @@
   transition: opacity 0.3s ease-in-out;
   color: rgba(33, 33, 33, 1);
 }
-.modal__close_type_preview {
+.modal__close-btn_type_preview {
   top: 0;
   right: -52.5px;
   background-color: transparent;
@@ -59,7 +59,7 @@
 .modal__close-btn:hover {
   opacity: 100%;
 }
-.modal__close_type_preview:hover {
+.modal__close-btn_type_preview:hover {
   opacity: 40%;
 }
 
@@ -168,6 +168,9 @@
   }
   .modal__input {
     max-width: 248px;
+    font-size: 16px;
+  }
+  .modal__caption {
     font-size: 16px;
   }
 }
