@@ -96,8 +96,19 @@
   font-size: 20px;
   line-height: 1;
 }
+.modal__input_type_error {
+  border: 1px solid rgba(255, 0, 0, 0.6);
+}
 .model__input::placeholder {
   color: rgba(33, 33, 33, 0.3);
+}
+.modal__error {
+  margin-top: 8px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(255, 0, 0, 0.7);
+  display: block;
 }
 
 .modal__submit-btn {
@@ -112,6 +123,10 @@
   cursor: pointer;
   border: none;
 }
+.modal__submit-btn_disabled {
+  opacity: 50%;
+}
+
 .modal__image-container {
   position: relative;
 }
