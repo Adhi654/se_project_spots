@@ -62,6 +62,30 @@
 .modal__close-btn_type_preview:hover {
   opacity: 40%;
 }
+.modal__container_type_confirm {
+  max-width: 630px;
+  border-radius: 8px;
+  padding: 32px 20px;
+}
+.modal__delete-image {
+  width: 156px;
+  padding: 18px 32px;
+  background-color: rgba(255, 101, 101, 1);
+  border-radius: 8px;
+}
+.modal__cancel-image {
+  width: 156px;
+  padding: 18px 32px;
+  background-color: white;
+  color: rgba(33, 33, 33, 1);
+  border: 1px solid rgba(33, 33, 33, 0.4);
+  border-radius: 8px;
+}
+.modal__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
 
 .modal__title {
   margin: 0 0 32px;
@@ -69,6 +93,13 @@
   font-weight: 500;
   font-size: 32px;
   line-height: 100%;
+}
+.modal__title_type_confirm {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  color: rgba(33, 33, 33, 1);
 }
 
 .modal__form {
