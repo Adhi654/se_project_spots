@@ -25,7 +25,7 @@
   transition: opacity 0.3s ease-in-out;
 }
 .card__like-button_active {
-  background-image: url(../images/like\ state.svg);
+  background-image: url(../images/likeState.svg);
   opacity: 1;
   background-repeat: no-repeat;
 }

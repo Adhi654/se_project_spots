@@ -62,6 +62,7 @@
 .modal__close-btn_type_preview:hover {
   opacity: 40%;
 }
+
 .modal__container_type_confirm {
   max-width: 630px;
   border-radius: 8px;
@@ -72,14 +73,23 @@
   padding: 18px 32px;
   background-color: rgba(255, 101, 101, 1);
   border-radius: 8px;
+  color: rgba(33, 33, 33, 1);
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+.modal__delete-image:hover {
+  background-color: rgba(255, 51, 51, 1);
 }
 .modal__cancel-image {
   width: 156px;
   padding: 18px 32px;
-  background-color: white;
   color: rgba(33, 33, 33, 1);
   border: 1px solid rgba(33, 33, 33, 0.4);
   border-radius: 8px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+.modal__cancel-image:hover {
+  background-color: rgba(33, 33, 33, 1);
+  color: rgba(255, 255, 255, 1);
 }
 .modal__buttons {
   display: flex;
@@ -202,6 +212,10 @@
     top: 22px;
     right: 12px;
   }
+  .modal__close-btn_type_preview {
+    top: -48px;
+    right: 0;
+  }
   .modal__close_type_preview {
     top: -48px;
     right: 0;
@@ -218,5 +232,16 @@
   }
   .modal__caption {
     font-size: 16px;
+  }
+}
+@media screen and (max-width: 788px) {
+  .modal__container_type_confirm {
+    max-width: 65vw;
+  }
+}
+@media screen and (max-width: 622px) {
+  .modal__container_type_confirm {
+    max-width: 95%;
+    width: 300px;
   }
 }
